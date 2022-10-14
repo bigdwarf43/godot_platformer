@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/SFX_Jump_47.mp3-9ec0c393a43cdd4e7689c472a95ad906.mp3str"
+
+[deps]
+
+source_file="res://resources/8_BIT_[50_SFX]_Jump_Free_Sound_Effects_N1_BY_jalastram/8_BIT_[50_SFX]_Jump_Free_Sound_Effects_N1_BY_jalastram/MP3_DEMOS/SFX_Jump_47.mp3"
+dest_files=[ "res://.import/SFX_Jump_47.mp3-9ec0c393a43cdd4e7689c472a95ad906.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

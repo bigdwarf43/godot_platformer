@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scenes/START_BUTTON.gd" type="Script" id=1]
+
+[node name="START_BUTTON" type="Button"]
+margin_right = 50.0
+margin_bottom = 20.0
+text = "START"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+next_scene_path = "res://scenes/MainScene.tscn"
+[connection signal="button_up" from="." to="." method="_on_START_BUTTON_button_up"]

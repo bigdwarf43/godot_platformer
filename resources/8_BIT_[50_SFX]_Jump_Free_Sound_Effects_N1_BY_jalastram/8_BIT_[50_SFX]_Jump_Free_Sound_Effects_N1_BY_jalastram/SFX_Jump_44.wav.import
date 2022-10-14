@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/SFX_Jump_44.wav-74fee7f72030d9ae5c1087380578fb2f.sample"
+
+[deps]
+
+source_file="res://resources/8_BIT_[50_SFX]_Jump_Free_Sound_Effects_N1_BY_jalastram/8_BIT_[50_SFX]_Jump_Free_Sound_Effects_N1_BY_jalastram/SFX_Jump_44.wav"
+dest_files=[ "res://.import/SFX_Jump_44.wav-74fee7f72030d9ae5c1087380578fb2f.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

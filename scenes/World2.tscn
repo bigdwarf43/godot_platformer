@@ -1,0 +1,59 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://resources/tileset.tres" type="TileSet" id=1]
+[ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/Mushroom.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/ParallaxBackground.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/WorldComplete.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/Enemy.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/music_level.tscn" type="PackedScene" id=7]
+
+[node name="World2" type="Node2D"]
+
+[node name="music_level" parent="." instance=ExtResource( 7 )]
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 54, 77 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( -720857, 16, 0, -720856, 17, 0, -720855, 17, 0, -720854, 17, 0, -720853, 17, 0, -720852, 18, 0, -655321, 19, 0, -655320, 0, 0, -655319, 0, 0, -655318, 0, 0, -655317, 0, 0, -655316, 23, 0, -589785, 19, 0, -589784, 0, 0, -589783, 0, 0, -589782, 0, 0, -589781, 0, 0, -589780, 23, 0, -524249, 20, 0, -524248, 21, 0, -524247, 21, 0, -524246, 21, 0, -524245, 21, 0, -524244, 22, 0, -327632, 16, 0, -327631, 17, 0, -327630, 17, 0, -327629, 17, 0, -327628, 18, 0, -262096, 19, 0, -262095, 0, 0, -262094, 0, 0, -262093, 0, 0, -262092, 23, 0, -196560, 20, 0, -196559, 21, 0, -196558, 21, 0, -196557, 21, 0, -196556, 22, 0, 65590, 4, 0, 327718, 1, 0, 458753, 16, 0, 458754, 17, 0, 458755, 17, 0, 458756, 17, 0, 458757, 17, 0, 458758, 17, 0, 458759, 17, 0, 458760, 17, 0, 458761, 17, 0, 458762, 17, 0, 458763, 17, 0, 458764, 18, 0, 458770, 8, 0, 458782, 8, 0, 524289, 20, 0, 524290, 21, 0, 524291, 21, 0, 524292, 21, 0, 524293, 21, 0, 524294, 21, 0, 524295, 21, 0, 524296, 21, 0, 524297, 21, 0, 524298, 21, 0, 524299, 21, 0, 524300, 22, 0, 524306, 4, 0, 524312, 4, 0, 524318, 4, 0, 524345, 4, 0, 852015, 4, 0, 983070, 16, 0, 983071, 17, 0, 983072, 17, 0, 983073, 17, 0, 983074, 17, 0, 983075, 17, 0, 983076, 17, 0, 983077, 17, 0, 983078, 18, 0, 1048606, 19, 0, 1048607, 0, 0, 1048608, 0, 0, 1048609, 0, 0, 1048610, 0, 0, 1048611, 0, 0, 1048612, 0, 0, 1048613, 0, 0, 1048614, 23, 0, 1114142, 19, 0, 1114143, 0, 0, 1114144, 0, 0, 1114145, 0, 0, 1114146, 0, 0, 1114147, 0, 0, 1114148, 0, 0, 1114149, 0, 0, 1114150, 23, 0, 1179678, 20, 0, 1179679, 21, 0, 1179680, 21, 0, 1179681, 21, 0, 1179682, 21, 0, 1179683, 21, 0, 1179684, 21, 0, 1179685, 21, 0, 1179686, 22, 0 )
+
+[node name="ParallaxBackground" parent="." instance=ExtResource( 4 )]
+
+[node name="Mushroom" parent="." instance=ExtResource( 3 )]
+position = Vector2( 792, 202 )
+
+[node name="Mushroom2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 948, 121 )
+
+[node name="Mushroom3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 875, 9 )
+
+[node name="Mushroom4" parent="." instance=ExtResource( 3 )]
+position = Vector2( 786, -87 )
+
+[node name="WorldComplete" parent="." instance=ExtResource( 5 )]
+position = Vector2( 664, -190 )
+next_world = "res://scenes/MainScene.tscn"
+
+[node name="background objects" type="TileMap" parent="."]
+z_index = -1
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( -917463, 2, 0, -786393, 8, 0, -786389, 7, 0, -524237, 2, 0, -393166, 7, 0, -393164, 6, 0, 262148, 10, 0, 262150, 2, 0, 327684, 11, 0, 327691, 11, 0, 720943, 3, 0, 786466, 2, 0, 852000, 3, 0, 917534, 7, 0, 917536, 6, 0, 917541, 7, 0 )
+
+[node name="Enemy4" parent="." instance=ExtResource( 6 )]
+position = Vector2( 405, 122 )
+
+[node name="Enemy3" parent="." instance=ExtResource( 6 )]
+position = Vector2( 544, 232 )
+
+[node name="Enemy2" parent="." instance=ExtResource( 6 )]
+position = Vector2( 812, -89 )
+
+[node name="Enemy" parent="." instance=ExtResource( 6 )]
+position = Vector2( 159, 105 )
