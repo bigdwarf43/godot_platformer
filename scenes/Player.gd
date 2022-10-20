@@ -73,13 +73,6 @@ func _physics_process(delta):
 	
 	
 	"""
-
-#	if Input.is_action_just_pressed("jump"):
-#		jump_was_pressed = true
-#		remember_jump_time()
-#		if can_jump:
-#			velocity.y = max_jump_speed
-#			$sound_jump.play()
 		
 			
 	if Input.is_action_just_released("jump") && velocity.y < min_jump_speed:
